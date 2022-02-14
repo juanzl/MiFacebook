@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_num1"
+        android:layout_width="0.0"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:hint="0.0"
+        android:textAlignment="viewEnd"
+        android:textSize="48sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <TextView
+        android:id="@+id/tv_num2"
+        android:layout_width="0.0"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:hint="0.0"
+        android:textAlignment="viewEnd"
+        android:textSize="48sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_num1" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="presionarDigito"
+        android:shadowColor="@color/teal_200"
+        android:text="9"
+        android:textColorLink="#FFFFFF"
+        app:strokeColor="@color/design_default_color_error"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <Button
+        android:id="@+id/btnX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="presionarDigito"
+        android:text="x"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn3"
+        tools:layout_editor_absoluteX="345dp" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="presionarDigito"
+        android:text="7"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn8"
+        tools:layout_editor_absoluteX="244dp" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="presionarDigito"
+        android:text="5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn4"
+        tools:layout_editor_absoluteX="138dp" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="presionarDigito"
+        android:text="Clear"
+        app:iconTint="@color/design_default_color_error"
+        app:layout_constraintBottom_toTopOf="@+id/btnMas"
+        app:layout_constraintTop_toBottomOf="@+id/tv_num2"
+        app:layout_constraintVertical_bias="0.527"
+        app:rippleColor="@color/design_default_color_error"
+        tools:layout_editor_absoluteX="339dp" />
+
+    <Button
+        android:id="@+id/btnMenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="presionarDigito"
+        android:text="-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn6"
+        tools:layout_editor_absoluteX="345dp" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="presionarDigito"
+        android:shadowColor="@color/design_default_color_error"
+        android:text="4"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="354dp" />
+
+    <Button
+        android:id="@+id/btnMas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="presionarDigito"
+        android:text="+"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn7"
+        tools:layout_editor_absoluteX="345dp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="presionarDigito"
+        android:text="2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn1"
+        tools:layout_editor_absoluteX="138dp" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="presionarDigito"
+        android:text="6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn5"
+        tools:layout_editor_absoluteX="244dp" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="presionarDigito"
+        android:text="8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn9"
+        tools:layout_editor_absoluteX="138dp" />
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="presionarDigito"
+        android:text="0"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="462dp" />
+
+    <Button
+        android:id="@+id/btnPunto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn0"
+        tools:layout_editor_absoluteX="138dp" />
+
+    <Button
+        android:id="@+id/btnDividir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="presionarDigito"
+        android:text="/"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnIgual"
+        tools:layout_editor_absoluteX="345dp" />
+
+    <Button
+        android:id="@+id/btnIgual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnPunto"
+        tools:layout_editor_absoluteX="244dp" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="presionarDigito"
+        android:text="3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn2"
+        tools:layout_editor_absoluteX="244dp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="presionarDigito"
+        android:text="1"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

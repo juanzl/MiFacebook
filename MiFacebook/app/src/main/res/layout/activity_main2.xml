@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:textAlignment="center"
+        android:textColor="@color/gris"
+        android:background="@color/white"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="20sp"
+        android:text="Numero de celular o correo electronico"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/blanquito"
+        android:inputType="number"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="28sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="8dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blanquito"
+        android:textSize="28sp"
+        android:layout_marginHorizontal="8dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/azulito"
+        android:textAlignment="center"
+        android:text="Iniciar sesión"
+        android:layout_margin="8dp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Olvidaste tu contraseña?"
+        android:textSize="10dp"
+        android:layout_marginHorizontal="8dp"
+        android:textColor="@color/azul"
+        android:backgroundTint="@color/white"
+        />
+
+    <Button
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:layout_marginHorizontal="8dp"
+        android:backgroundTint="@color/verde"
+        android:text="Crear cuenta nueva"
+        android:textAlignment="center"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_margin="2dp"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="10sp"
+        android:text="Español"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textColor="@color/azul"
+        android:backgroundTint="@color/white"
+        android:layout_margin="2dp"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="10sp"
+        android:text="English (US)"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textColor="@color/azul"
+        android:backgroundTint="@color/white"
+        android:layout_margin="2dp"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="10sp"
+        android:text="Français (Frances)"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textColor="@color/azul"
+        android:backgroundTint="@color/white"
+        android:layout_margin="2dp"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="10sp"
+        android:text="Portugués (Brasil)"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textColor="@color/azul"
+        android:backgroundTint="@color/white"
+        android:layout_margin="2dp"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="10sp"
+        android:text="日本人 (japones)"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textColor="@color/azul"
+        android:backgroundTint="@color/white"
+        android:layout_margin="2dp"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="10sp"
+        android:text="Italiano"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textColor="@color/azul"
+        android:backgroundTint="@color/white"
+        android:layout_margin="2dp"
+        android:layout_marginHorizontal="8dp"
+        android:textSize="10sp"
+        android:text="Mas idiomas"
+        />
+</LinearLayout>
