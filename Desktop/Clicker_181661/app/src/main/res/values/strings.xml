@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Clicker_181661</string>
+    <string name="ok">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="dialog_message">estas seguro?</string>
+    <string name="dialog_title">AVISO</string>
+</resources>
