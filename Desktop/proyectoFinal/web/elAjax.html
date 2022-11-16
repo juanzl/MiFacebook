@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ajax</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+          
+        <button id="boton" > Cargar sitio</button>
+            
+        <div id="response">
+            
+        </div>
+        <script>
+            
+            function ajax(){
+                const http = new XMLHttpRequest();
+                const url = 'http://localhost:8060/proyectoFinal/login.jsp';
+                
+                http.onreadystatechange = function(){
+                    if(this.readyState == 4 && this.status == 200){
+                        console.log(this.responseText);
+                        document.getElementById("response").innerHTML = this.responseText;
+                    }
+                }
+                
+                http.open("GET", url);
+                http.send();
+            }
+            document.getElementById("boton").addEventListener("click", function(){
+                ajax();
+            });
+            </script>
+    </body>
+</html>
